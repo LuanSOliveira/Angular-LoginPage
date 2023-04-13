@@ -39,6 +39,7 @@ export class FormularioComponent {
     this.usuarios.map(
       (usuario) => {
         if(this.login === usuario.name && this.senha === usuario.password){
+          this.loginService.userAcesse = true
           this.navigateToRoute('saudacao')
           this.validaLogin = true
         }

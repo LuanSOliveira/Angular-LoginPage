@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent {
 
+  onClick():void{
+    alert(
+      `
+      Utilize as credenciais para testar:
+      Login: admin  -  Senha: admin
+      Login: user  -  Senha: user
+      `
+    )
+  }
+
 }

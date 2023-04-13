@@ -1,6 +1,11 @@
-<div class="BoxSaudacao">
+<div class="BoxSaudacao" *ngIf="canShow">
     <app-logo [url]="urlLogo"></app-logo>
     <h1>Bem Vindo {{login}}!</h1>
     <h2>Seu Login foi realizado com sucesso.</h2>
+    <button (click)="onClick()">Voltar</button>
+</div>
+<div class="BoxSaudacaoFalse" *ngIf="!canShow">
+    <app-logo [url]="urlLogoFalse"></app-logo>
+    <h1>Você não fez o Login!</h1>
     <button (click)="onClick()">Voltar</button>
 </div>

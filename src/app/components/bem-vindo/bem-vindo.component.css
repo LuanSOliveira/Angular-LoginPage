@@ -8,6 +8,16 @@
     color: azure;
 }
 
+.BoxSaudacaoFalse{
+    background: rgb(146, 1, 1);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: azure;
+}
+
 h1{
     font-size: 45px;
     margin: 2.5rem 0;
