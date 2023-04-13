@@ -1,0 +1,8 @@
+<div class="BoxFormulario">    
+    <app-logo [url]="urlLogo"></app-logo>
+    <form (submit)="Submeter($event)">
+        <input placeholder={{textLogin}} type={{tipo[0]}} [(ngModel)]="login" name="login"/>
+        <input placeholder={{textSenha}} type={{tipo[1]}} [(ngModel)]="senha" name="senha"/>
+        <app-botao></app-botao>
+    </form>
+</div>
